@@ -23,6 +23,14 @@ local VLF = {
     }
   }
 }
+function VLF:FindWhitelistTable(tab, obj)
+	for i,v in pairs(tab) do
+		if v == obj or type(v) == "table" and v.hash == obj then
+			return v
+		end
+	end
+	return nil
+end
 function VLF:Hash(s)
   return tostring(s).."nohashneeded"
 end
