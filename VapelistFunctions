@@ -1,0 +1,3 @@
+local VLF = {
+  WhitelistTable = {}
+}
