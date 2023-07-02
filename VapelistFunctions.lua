@@ -24,11 +24,11 @@ local VLF = {
   }
 }
 function VLF:Hash(s)
-  return(tostring(s).."nohashneeded")
+  return tostring(s).."nohashneeded"
 end
 function VLF:CheckPlayerType(i)
-  return(VLF.WhitelistTable.types[VLF:Hash(i.Name..i.UserId)].plrtype,
+  return VLF.WhitelistTable.types[VLF:Hash(i.Name..i.UserId)].plrtype,
     VLF.WhitelistTable.types[VLF:Hash(i.Name..i.UserId)].plrattackable,
-    VLF.WhitelistTable.types[VLF:Hash(i.Name..i.UserId)].plrtag)
+    VLF.WhitelistTable.types[VLF:Hash(i.Name..i.UserId)].plrtag
 end
 return VLF
