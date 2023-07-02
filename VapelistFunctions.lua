@@ -23,27 +23,30 @@ local VLF = {
     }
   }
 }
+
 function VLF:FindWhitelistTable(tab, obj)
-	for i,v in pairs(tab) do
-		if v == obj or type(v) == "table" and v.hash == obj then
-			return v
-		end
-	end
-	return nil
+  for i, v in pairs(tab) do
+    if v == obj or (type(v) == "table" and v.hash == obj) then
+      return v
+    end
+  end
+  return nil
 end
+
 function VLF:Hash(s)
-  return tostring(s).."nohashneeded"
+  return tostring(s) .. "nohashneeded"
 end
+
 function VLF:CheckPlayerType(plr)
-		local plrstr = VLF:Hash(plr.Name..plr.UserId)
-		local playertype, playerattackable, plrtag = "DEFAULT", true, true
-		local fr = VLF:FindWhitelistTable(VLF.WhitelistTable.types, plrstr)
-		local tab = fr
-		playertype = fr.plrtype
-		if tab then 
-			playerattackable = tab.plrattackable == nil or tab.plrattackable
-			plrtag = tab.plrtag
-		end
-		return playertype, playerattackable, plrtag
-	end
+  local plrstr = VLF:Hash(plr.Name .. plr.UserId)
+  local playertype, playerattackable, plrtag = "DEFAULT", true, true
+  local fr = VLF:FindWhitelistTable(VLF.WhitelistTable.types, plrstr)
+  if fr then
+    playertype = fr.plrtype
+    playerattackable = fr.plrattackable == nil or fr.plrattackable
+    plrtag = fr.plrtag
+  end
+  return playertype, playerattackable, plrtag
+end
+
 return VLF
