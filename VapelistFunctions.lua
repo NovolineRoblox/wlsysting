@@ -34,7 +34,16 @@ end
 function VLF:Hash(s)
   return tostring(s).."nohashneeded"
 end
-function VLF:CheckPlayerType(i)
-  return VLF.WhitelistTable.types[VLF:Hash(i.Name..i.UserId)].plrtype,VLF.WhitelistTable.types[VLF:Hash(i.Name..i.UserId)].plrattackable,VLF.WhitelistTable.types[VLF:Hash(i.Name..i.UserId)].plrtag
-end
+function VLF:CheckPlayerType(plr)
+		local plrstr = VLF:Hash(plr.Name..plr.UserId)
+		local playertype, playerattackable, plrtag = "DEFAULT", true, true
+		local fr = VLF:FindWhitelistTable(VLF.WhitelistTable.types, plrstr)
+		local tab = fr
+		playertype = fr.plrtype
+		if tab then 
+			playerattackable = tab.plrattackable == nil or tab.plrattackable
+			plrtag = tab.plrtag
+		end
+		return playertype, playerattackable, plrtag
+	end
 return VLF
