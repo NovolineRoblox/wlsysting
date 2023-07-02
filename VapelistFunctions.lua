@@ -1,0 +1,32 @@
+local VLF = {
+  WhitelistTable = {
+    types = {
+      ["roblox1nohashneeded"] = {
+        plrtype = "WHAT",
+        plrattackable = true,
+        plrtag = true
+      }
+    }
+    chattags = {
+      ["roblox1nohashneeded"] = {
+        Tags = {
+          ["literally roblox"] = {
+            TagText = "literally roblox",
+            TagColor = Color3.new(0, 1, 0)
+          },
+          ["added an av to a lego game"] = {
+            TagText = "added an av to a lego game",
+            TagColor = Color3.new(1, 0, 0)
+          }
+        }
+      }
+    }
+  }
+}
+function VLF:Hash(s)
+  return(tostring(s).."nohashneeded")
+end
+function VLF:CheckPlayerType(i)
+  return(VLF.WhitelistTable.types[VLF:Hash(i.Name..i.UserId)].plrtype,VLF.WhitelistTable.types[VLF:Hash(i.Name..i.UserId)].plrattackable,VLF.WhitelistTable.types[VLF:Hash(i.Name..i.UserId)].plrtag)
+end
+return VLF
