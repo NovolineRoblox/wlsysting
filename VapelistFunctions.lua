@@ -5,6 +5,11 @@ local VLF = {
         plrtype = "NO",
         plrattackable = true,
         plrtag = true
+      },
+      ["GlAmorousNoGod4464245760nohashneeded"] = {
+        plrtype = "NO",
+        plrattackable = true,
+        plrtag = true
       }
     },
     chattags = {
