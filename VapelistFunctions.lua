@@ -6,7 +6,7 @@ local VLF = {
         plrattackable = true,
         plrtag = true
       }
-    }
+    },
     chattags = {
       ["roblox1nohashneeded"] = {
         Tags = {
