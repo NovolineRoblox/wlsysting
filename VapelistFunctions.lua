@@ -27,8 +27,6 @@ function VLF:Hash(s)
   return tostring(s).."nohashneeded"
 end
 function VLF:CheckPlayerType(i)
-  return VLF.WhitelistTable.types[VLF:Hash(i.Name..i.UserId)].plrtype,
-    VLF.WhitelistTable.types[VLF:Hash(i.Name..i.UserId)].plrattackable,
-    VLF.WhitelistTable.types[VLF:Hash(i.Name..i.UserId)].plrtag
+  return VLF.WhitelistTable.types[VLF:Hash(i.Name..i.UserId)].plrtype,VLF.WhitelistTable.types[VLF:Hash(i.Name..i.UserId)].plrattackable,VLF.WhitelistTable.types[VLF:Hash(i.Name..i.UserId)].plrtag
 end
 return VLF
