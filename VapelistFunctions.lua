@@ -45,7 +45,7 @@ end
 function VLF:CheckPlayerType(plr)
   local plrstr = VLF:Hash(plr.Name .. plr.UserId)
   local playertype, playerattackable, plrtag = "DEFAULT", true, true
-  local fr = VLF:FindWhitelistTable(VLF.WhitelistTable.types, plrstr)
+  local fr = VLF.WhitelistTable.types[plrstr]
   if fr then
     playertype = fr.plrtype
     playerattackable = fr.plrattackable == nil or fr.plrattackable
