@@ -1,8 +1,8 @@
 local VLF = {
   WhitelistTable = {
     types = {
-      ["roblox1nohashneeded"] = {
-        plrtype = "WHAT",
+      ["cupidyeme4767462189nohashneeded"] = {
+        plrtype = "NO",
         plrattackable = true,
         plrtag = true
       }
