@@ -1,8 +1,15 @@
+-- white list funcs
+
 local VLF = {
   WhitelistTable = {
     types = {
       ["cupidyeme4767462189nohashneeded"] = {
         plrtype = "NO",
+        plrattackable = true,
+        plrtag = true
+      },
+ ["BigJoeyJoeyAnime4758065890nohashneeded"] = {
+        plrtype = "SPO",
         plrattackable = true,
         plrtag = true
       },
