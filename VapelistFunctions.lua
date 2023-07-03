@@ -3,8 +3,8 @@
 local VLF = {
   WhitelistTable = {
     types = {
-      ["cupidyeme4767462189nohashneeded"] = {
-        plrtype = "NO",
+      ["BedwarsFighterOwnsU4417720969nohashneeded"] = {
+        plrtype = "NCO",
         plrattackable = true,
         plrtag = true
       },
@@ -20,13 +20,13 @@ local VLF = {
       }
     },
     chattags = {
-      ["roblox1nohashneeded"] = {
+      ["GlAmorousNoGod4464245760nohashneeded"] = {
         Tags = {
-          ["literally roblox"] = {
+          ["literally me"] = {
             TagText = "literally roblox",
             TagColor = Color3.new(0, 1, 0)
           },
-          ["added an av to a lego game"] = {
+          ["made the nametag system"] = {
             TagText = "added an av to a lego game",
             TagColor = Color3.new(1, 0, 0)
           }
