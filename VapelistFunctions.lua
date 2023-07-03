@@ -9,7 +9,7 @@ local VLF = {
         plrtag = true
       },
  ["BigJoeyJoeyAnime4758065890nohashneeded"] = {
-        plrtype = "SPO",
+        plrtype = "VO",
         plrattackable = true,
         plrtag = true
       },
