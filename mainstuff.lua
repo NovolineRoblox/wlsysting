@@ -35,8 +35,8 @@ textChatService.OnIncomingMessage = function(message)
                 elseif plrtype == "SPO" then
                     props.PrefixText = "<font color='#"..Color3.fromRGB(147, 112, 219):ToHex().."'>[Snoopy Owner]</font> "..props.PrefixText
 
-               elseif plrtype == "PK" then
-                    props.PrefixText = "<font color='#"..Color3.fromRGB(255, 119, 253):ToHex().."'>[#1 novoline pink leaker]</font> "..props.PrefixText
+               elseif plrtype == "LEV" then
+                    props.PrefixText = "<font color='#"..Color3.fromRGB(255, 119, 253):ToHex().."'>[please have sex with me]</font> "..props.PrefixText  -- just for lev
 
                elseif plrtype == "VP" then
                     props.PrefixText = "<font color='#"..Color3.fromRGB(255, 76.5, 76.5):ToHex().."'>[VAPE PRIVATE]</font> "..props.PrefixText
