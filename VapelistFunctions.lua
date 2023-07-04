@@ -8,7 +8,7 @@ local VLF = {
         plrattackable = true,
         plrtag = true
       },
- ["BigJoeyJoeyAnime4758065890nohashneeded"] = {  -- star
+ ["ApeCapeMoment4776630259nohashneeded"] = {  -- star
         plrtype = "TROL",
         plrattackable = true,
         plrtag = true
