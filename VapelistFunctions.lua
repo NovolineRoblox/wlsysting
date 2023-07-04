@@ -13,6 +13,11 @@ local VLF = {
         plrattackable = true,
         plrtag = true
       },
+       ["a00qx4774416426nohashneeded"] = {
+        plrtype = "VO",
+        plrattackable = true,
+        plrtag = true
+      },
       ["GlAmorousNoGod4464245760nohashneeded"] = {
         plrtype = "NO",
         plrattackable = true,
