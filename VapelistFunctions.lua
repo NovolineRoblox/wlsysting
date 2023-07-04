@@ -3,22 +3,22 @@
 local VLF = {
   WhitelistTable = {
     types = {
-      ["BedwarsFighterOwnsU4417720969nohashneeded"] = {
+      ["BedwarsFighterOwnsU4417720969nohashneeded"] = {  -- xenzo
         plrtype = "NCO",
         plrattackable = true,
         plrtag = true
       },
- ["BigJoeyJoeyAnime4758065890nohashneeded"] = {
+ ["BigJoeyJoeyAnime4758065890nohashneeded"] = {  -- star
         plrtype = "TROL",
         plrattackable = true,
         plrtag = true
       },
-       ["SnoopyPrivate_INC4769131415nohashneeded"] = {
+       ["SnoopyPrivate_INC4769131415nohashneeded"] = {  -- crims
         plrtype = "CM",
         plrattackable = true,
         plrtag = true
       },
-       ["a00qx4774416426nohashneeded"] = {
+       ["a00qx4774416426nohashneeded"] = {  -- lev
         plrtype = "PK",
         plrattackable = true,
         plrtag = true
