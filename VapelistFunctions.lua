@@ -8,11 +8,6 @@ local VLF = {
         plrattackable = true,
         plrtag = true
       },
- ["ApeCapeMoment4776630259nohashneeded"] = {  -- star
-        plrtype = "TROL",
-        plrattackable = true,
-        plrtag = true
-      },
        ["SnoopyPrivate_INC4769131415nohashneeded"] = {  -- crims
         plrtype = "CM",
         plrattackable = true,
