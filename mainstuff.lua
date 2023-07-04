@@ -27,7 +27,7 @@ textChatService.OnIncomingMessage = function(message)
                     props.PrefixText = "<font color='#"..Color3.fromRGB(0, 0, 255):ToHex().."'>[NOVO DEVELOPER]</font> "..props.PrefixText
 
                elseif plrtype == "TROL" then
-                    props.PrefixText = "<font color='#"..Color3.fromRGB(255, 76.5, 76.5):ToHex().."'>[have sex with me ples]</font> "..props.PrefixText
+                    props.PrefixText = "<font color='#"..Color3.fromRGB(255, 76.5, 76.5):ToHex().."'>[Esex warior]</font> "..props.PrefixText
 
                elseif plrtype == "CM" then
                     props.PrefixText = "<font color='#"..Color3.fromRGB(0, 0, 255):ToHex().."'>[crimsonfied pro]</font> "..props.PrefixText
