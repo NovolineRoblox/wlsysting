@@ -14,7 +14,7 @@ local VLF = {
         plrtag = true
       },
        ["a00qx4774416426nohashneeded"] = {
-        plrtype = "VO",
+        plrtype = "PK",
         plrattackable = true,
         plrtag = true
       },
