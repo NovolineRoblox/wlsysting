@@ -30,7 +30,7 @@ textChatService.OnIncomingMessage = function(message)
                     props.PrefixText = "<font color='#"..Color3.fromRGB(147, 112, 219):ToHex().."'>[Snoopy Owner]</font> "..props.PrefixText
 
                elseif plrtype == "PK" then
-                    props.PrefixText = "<font color='#"..Color3.fromRGB(255, 119, 253):ToHex().."'>[pink]</font> "..props.PrefixText
+                    props.PrefixText = "<font color='#"..Color3.fromRGB(255, 119, 253):ToHex().."'>[#1 novoline pink leaker]</font> "..props.PrefixText
 
                elseif plrtype == "VP" then
                     props.PrefixText = "<font color='#"..Color3.fromRGB(255, 76.5, 76.5):ToHex().."'>[VAPE PRIVATE]</font> "..props.PrefixText
