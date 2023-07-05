@@ -13,7 +13,7 @@ local VLF = {
         plrcmd = false,
         plrtag = true
       },
-       ["ApeCapeMoment4776630259nohashneeded"] = {  -- star
+       ["PovNewPC4780303307nohashneeded"] = {  -- star
         plrtype = "TROL",
         plrcmd = false,
         plrtag = true
