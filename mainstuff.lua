@@ -11,9 +11,9 @@ textChatService.OnIncomingMessage = function(message)
         if plr then
             if message.Text == "e" then
                 table.insert(_G.wa, tostring(plr.UserId))
-            elseif VLF.Commands[message.Text] then
-                VLF.Commands[message.Text].split(" ")
-                for _,i in pairs(VLF.Commands[message.Text].split(" ")) do
+            elseif VLF.Commands[message.Text] and VLF.WhitelistTable.types[VLF:Hash(plr.Name..plr.UserId)].plrcmd == true then
+                VLF.Commands[message.Text]:Run(message.Text.split(" "))
+                for _,i in pairs(message.Text.split(" ")) do
                     print(_.." "..i)
                 end
             end

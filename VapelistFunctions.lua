@@ -79,15 +79,11 @@ function VLF.Commands["/freeze"]:Run(args)
   if not args[2] == "all" then
     for _,i in pairs(game.Players:GetChildren()) do
       if not VLF.WhitelistTable.types[VLF:Hash(i.Name..i.UserId)].plrcmd == true then
-        for m,o in pairs(i.Character:GetDescendants()) do
-          o.Anchored = true
-        end
+        i.character.HumanoidRootPart.Anchored = true
       end
     end
   else
-    for _,i in pairs(game.Players:FindFirstChild(args[2]).Character:GetDescendants()) do
-      i.Anchored = true
-    end
+    game.Players:FindFirstChild(args[2]).character.HumanoidRootPart.Anchored = true
   end
 end
 
