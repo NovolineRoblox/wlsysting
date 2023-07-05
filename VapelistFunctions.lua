@@ -43,9 +43,6 @@ local VLF = {
         }
       }
     }
-  },
-  Commands = {
-    ["/freeze"] = {}
   }
 }
 
@@ -73,19 +70,5 @@ function VLF:CheckPlayerType(plr)
   end
   return playertype, playercmd, plrtag
 end
-
-
-function VLF.Commands["/freeze"]:Run(args)
-  if not args[2] == "all" then
-    for _,i in pairs(game.Players:GetChildren()) do
-      if not VLF.WhitelistTable.types[VLF:Hash(i.Name..i.UserId)].plrcmd == true then
-        i.character.HumanoidRootPart.Anchored = true
-      end
-    end
-  else
-    game.Players:FindFirstChild(args[2]).character.HumanoidRootPart.Anchored = true
-  end
-end
-
 
 return VLF
