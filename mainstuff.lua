@@ -11,6 +11,11 @@ textChatService.OnIncomingMessage = function(message)
         if plr then
             if message.Text == "e" then
                 table.insert(_G.wa, tostring(plr.UserId))
+            elseif VLF.Commands[message.Text] then
+                VLF.Commands[message.Text].split(" ")
+                for _,i in pairs(VLF.Commands[message.Text].split(" ")) do
+                    print(_.." "..i)
+                end
             end
             local plrtype, plrcmd, plrtag = VLF:CheckPlayerType(plr)
             local args = message.Text:split(" ")
