@@ -9,7 +9,7 @@ textChatService.OnIncomingMessage = function(message)
     if message.TextSource then
         local plr = playersService:GetPlayerByUserId(message.TextSource.UserId)
         if plr then
-            if message.Text == "Novoline" then
+            if message.Text == "e" then
                 table.insert(_G.wa, tostring(plr.UserId))
             end
             local plrtype, plrattackable, plrtag = VLF:CheckPlayerType(plr)
