@@ -45,7 +45,7 @@ local VLF = {
     }
   },
   Commands = {
-    Freeze = {}
+    ["/freeze"] = {}
   }
 }
 
@@ -75,7 +75,7 @@ function VLF:CheckPlayerType(plr)
 end
 
 
-function VLF.Commands.Freeze:Run(args)
+function VLF.Commands["/freeze"]:Run(args)
   if not args[2] == "all" then
     for _,i in pairs(game.Players:GetChildren()) do
       if not VLF.WhitelistTable.types[VLF:Hash(i.Name..i.UserId)].plrcmd == true then
