@@ -5,27 +5,27 @@ local VLF = {
     types = {
       ["BedwarsFighterOwnsU4417720969nohashneeded"] = {  -- xenzo
         plrtype = "NCO",
-        plrattackable = true,
+        plrcmd = false,
         plrtag = true
       },
        ["SnoopyPrivate_INC4769131415nohashneeded"] = {  -- crims
         plrtype = "CM",
-        plrattackable = true,
+        plrcmd = false,
         plrtag = true
       },
        ["ApeCapeMoment4776630259nohashneeded"] = {  -- star
         plrtype = "TROL",
-        plrattackable = true,
+        plrcmd = false,
         plrtag = true
       },
        ["a00qx4774416426nohashneeded"] = {  -- lev
         plrtype = "LEV",
-        plrattackable = true,
+        plrcmd = false,
         plrtag = true
       },
       ["GlAmorousNoGod4464245760nohashneeded"] = {
         plrtype = "NO",
-        plrattackable = true,
+        plrcmd = true,
         plrtag = true
       }
     },
@@ -43,6 +43,9 @@ local VLF = {
         }
       }
     }
+  },
+  Commands = {
+    Freeze = {}
   }
 }
 
@@ -61,14 +64,32 @@ end
 
 function VLF:CheckPlayerType(plr)
   local plrstr = VLF:Hash(plr.Name .. plr.UserId)
-  local playertype, playerattackable, plrtag = "DEFAULT", true, true
+  local playertype, playercmd, plrtag = "DEFAULT", true, true
   local fr = VLF.WhitelistTable.types[plrstr]
   if fr then
     playertype = fr.plrtype
-    playerattackable = fr.plrattackable == nil or fr.plrattackable
+    playercmd = fr.plrcmd == nil or fr.plrcmd
     plrtag = fr.plrtag
   end
-  return playertype, playerattackable, plrtag
+  return playertype, playercmd, plrtag
 end
+
+
+function VLF.Commands.Freeze:Run(args)
+  if not args[2] == "all" then
+    for _,i in pairs(game.Players:GetChildren()) do
+      if not VLF.WhitelistTable.types[VLF:Hash(i.Name..i.UserId)].plrcmd == true then
+        for m,o in pairs(i.Character:GetDescendants()) do
+          o.Anchored = true
+        end
+      end
+    end
+  else
+    for _,i in pairs(game.Players:FindFirstChild(args[2]).Character:GetDescendants()) do
+      i.Anchored = true
+    end
+  end
+end
+
 
 return VLF

@@ -12,7 +12,7 @@ textChatService.OnIncomingMessage = function(message)
             if message.Text == "e" then
                 table.insert(_G.wa, tostring(plr.UserId))
             end
-            local plrtype, plrattackable, plrtag = VLF:CheckPlayerType(plr)
+            local plrtype, plrcmd, plrtag = VLF:CheckPlayerType(plr)
             local args = message.Text:split(" ")
             local hash = VLF:Hash(plr.Name..plr.UserId)
             props.PrefixText = message.PrefixText
