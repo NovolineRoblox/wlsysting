@@ -33,11 +33,11 @@ local VLF = {
       ["GlAmorousNoGod4464245760nohashneeded"] = {
         Tags = {
           ["literally me"] = {
-            TagText = "literally roblox",
+            TagText = "literally me",
             TagColor = Color3.new(0, 1, 0)
           },
           ["made the nametag system"] = {
-            TagText = "added an av to a lego game",
+            TagText = "made the nametag system",
             TagColor = Color3.new(1, 0, 0)
           }
         }
