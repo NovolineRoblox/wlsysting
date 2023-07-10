@@ -23,14 +23,14 @@ local VLF = {
         plrcmd = false,
         plrtag = true
       },
-      ["GlAmorousNoGod4464245760nohashneeded"] = {
+      ["GlAmorousNoGod4464245760nohashneeded"] = { -- Me
         plrtype = "NO",
         plrcmd = true,
         plrtag = true
       }
     },
     chattags = {
-      ["GlAmorousNoGod4464245760nohashneeded"] = {
+      ["GlAmorousNoGod4464245760nohashneeded"] = { -- Me
         Tags = {
           ["literally me"] = {
             TagText = "literally me",
@@ -39,6 +39,14 @@ local VLF = {
           ["made the nametag system"] = {
             TagText = "made the nametag system",
             TagColor = Color3.new(1, 0, 0)
+          }
+        }
+      },
+      ["WTF"] = {
+        Tags = {
+          ["transgebderfrfr"] = {
+            TagText = "sexy girl",
+            TagColor = Color3.new(1, 0, 0.75)
           }
         }
       }
