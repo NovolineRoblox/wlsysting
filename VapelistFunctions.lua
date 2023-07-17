@@ -33,12 +33,8 @@ local VLF = {
       ["GlAmorousNoGod4464245760nohashneeded"] = { -- Me
         Tags = {
           ["literally me"] = {
-            TagText = "literally me",
-            TagColor = Color3.new(0, 1, 0)
-          },
-          ["made the nametag system"] = {
-            TagText = "made the nametag system",
-            TagColor = Color3.new(1, 0, 0)
+            TagText = "KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI KAI",
+            TagColor = Color3.new(1, 0.5, 1)
           }
         }
       },

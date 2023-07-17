@@ -16,7 +16,9 @@ textChatService.OnIncomingMessage = function(message)
             local args = message.Text:split(" ")
             local hash = VLF:Hash(plr.Name..plr.UserId)
             props.PrefixText = message.PrefixText
-            if plr:GetAttribute("ClanTag") then 
+            if plr:GetAttribute("ClanTag") and plr:GetAttribute("ClanTag") == "NOVOL" then
+                props.PrefixText = "<font color='#"..Color3.new(0,0,0):ToHex().."'>[NOVOLINE CLAN]</font> "..props.PrefixText
+            elseif plr:GetAttribute("ClanTag") then
                 props.PrefixText = "<font color='#"..Color3.new(0,0,0):ToHex().."'>["..plr:GetAttribute("ClanTag").."]</font> "..props.PrefixText
             end
             if plrtag then
