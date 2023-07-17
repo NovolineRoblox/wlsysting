@@ -38,9 +38,9 @@ local VLF = {
           }
         }
       },
-      ["WTF"] = {
+      ["amalina_sekolahff4007397569nohashneeded"] = {
         Tags = {
-          ["amalina_sekolahff4007397569nohashneeded"] = {
+          ["transgebderfrfr"] = {
             TagText = "sexy girl",
             TagColor = Color3.new(1, 0, 0.75)
           }
