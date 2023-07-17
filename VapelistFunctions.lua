@@ -40,7 +40,7 @@ local VLF = {
       },
       ["WTF"] = {
         Tags = {
-          ["transgebderfrfr"] = {
+          ["amalina_sekolahff4007397569nohashneeded"] = {
             TagText = "sexy girl",
             TagColor = Color3.new(1, 0, 0.75)
           }
